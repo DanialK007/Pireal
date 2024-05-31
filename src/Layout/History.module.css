@@ -1,0 +1,98 @@
+.MainHistory {
+    color: #1919199c;
+}
+
+.History{
+    height: 200px;
+    padding: 0 50px;
+    background-color: #10c9c3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.HistoryItem{
+    display: flex;
+}
+
+.HistoryItem p{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 8px;
+}
+
+.HistoryItem img {
+    height: 50px;
+}
+
+.AboutMe{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+}
+
+.ImageContainer{
+    position: relative;
+}
+
+.ImageLayer{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #10c9c344;
+    /* background-image: linear-gradient(to right, #10c9c344, #fff); */
+}
+
+.Desk{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: saturate(0.5);
+    opacity: 0.9;
+}
+
+.Signature{
+    height: 80px;
+    margin-right: auto;
+}
+
+.AboutMeText{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.AboutMeText h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #222;
+}
+
+.AboutMeText p{
+    font-size: 0.95rem;
+    padding: 10px 0;
+}
+
+.Project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.Project h1{
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.Project p{
+    font-size: 0.95rem;
+    width: 500px;
+}

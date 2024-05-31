@@ -1,0 +1,17 @@
+.MyButton{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #10c9c3;
+    padding: 15px 40px;
+    transition: 300ms;
+}
+
+.MyButton:hover{
+    background-color: #292b2c;
+}
+
+.MyButton:active{
+    background-color: #022423;
+}

@@ -1,0 +1,21 @@
+.Container{
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    background-image: url(img/promo-bg-1.jpg);
+    overflow: hidden;
+}
+
+.Container h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.Container p{
+    font-style: italic;
+}
+
+.Img{
+    width: 100%;
+    scale: 102%;
+}

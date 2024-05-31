@@ -1,0 +1,10 @@
+.CardWrapper {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.8s ease-in-out;
+}
+
+.CardWrapper.visible {
+    transform: translateY(0);
+    opacity: 1;
+}

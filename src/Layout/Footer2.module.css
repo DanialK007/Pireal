@@ -1,0 +1,42 @@
+.Footer2{
+    height: 300px;
+    padding: 0 50px;
+    color: aliceblue;
+    background-color: #292b2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer2 h1{
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+.Footer2 p, a{
+    color: #fff;
+    padding: 2px 0;
+}
+
+.Footer2 a:hover{
+    text-decoration: none;
+    color: #10c9c3;
+}
+
+.Footer2Side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer2Content{
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+}
+
+.Footer2Nav, .Footer2Social{
+    display: flex;
+    flex-direction: column;
+}
+

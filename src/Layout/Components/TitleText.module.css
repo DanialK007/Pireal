@@ -1,0 +1,32 @@
+.Title{
+    padding: 100px 200px;
+    text-align: center;
+}
+
+.TitleButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.TitleBtn{
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    color: #191919;
+    font-weight: 500;
+    color: #222;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.TitleBtn:hover{
+    opacity: 1;
+}
+
+.TitleText{
+    padding: 20px;
+    width: 550px;
+    margin: auto;
+}
