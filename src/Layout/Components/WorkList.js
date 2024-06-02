@@ -34,10 +34,10 @@ function WorkList() {
         <>
             <div className={styles.WorkList}>
                 <div className={styles.WorkCatag}>
-                    <a href="#" onClick={() => handleCategoryClick('ALL')}>ALL</a>
-                    <a href="#" onClick={() => handleCategoryClick('Branding')}>Branding</a>
-                    <a href="#" onClick={() => handleCategoryClick('Print')}>Print</a>
-                    <a href="#" onClick={() => handleCategoryClick('Design')}>Design</a>
+                    <button className={selectedCategory === 'ALL' ? styles.active : ''} onClick={() => handleCategoryClick('ALL')}>ALL</button>
+                    <button className={selectedCategory === 'Branding' ? styles.active : ''} onClick={() => handleCategoryClick('Branding')}>Branding</button>
+                    <button className={selectedCategory === 'Print' ? styles.active : ''} onClick={() => handleCategoryClick('Print')}>Print</button>
+                    <button className={selectedCategory === 'Design' ? styles.active : ''} onClick={() => handleCategoryClick('Design')}>Design</button>
                 </div>
                 <TransitionGroup className={styles.WorkGrid}>
                     {filteredWorks.map((work, index) => (

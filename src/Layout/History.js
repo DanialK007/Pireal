@@ -10,6 +10,7 @@ import star from './img/star.svg';
 import heart from './img/heart.svg';
 import desk from './img/desk.jpeg';
 import signature from './img/signature.png';
+import { Background, Parallax } from 'react-parallax';
 
 const missions = [
     {btn: "My History", text: "Seed may air multiply evening. Life in she'd Sixth lights likeness he for the. Of from hath fi ll of years fowl gathering you're every rule whose. Life meat tree give seas thing midst made called face have that."},
@@ -41,10 +42,12 @@ function History() {
                 </div>
                 <TitleText  TitleArray={missions} />
                 <div className={styles.AboutMe}>
-                    <div className={styles.ImageContainer}>
+                    <Parallax strength={200} className={styles.ImageContainer}>
+                        <Background>
                         <img src={desk} className={styles.Desk}/>
                         <div className={styles.ImageLayer}></div>
-                    </div>
+                        </Background>
+                    </Parallax>
                     <div className={styles.AboutMeText}>
                         <h1>About Me</h1>
                         <p>I am a professional web designer and front-end developer. I have over 3 years of experience in the field of web design and development.</p>

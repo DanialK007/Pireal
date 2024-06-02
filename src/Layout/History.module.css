@@ -47,7 +47,7 @@
 }
 
 .Desk{
-    width: 100%;
+    width: 50vw;
     height: 600px;
     object-fit: cover;
     filter: saturate(0.5);
@@ -60,7 +60,7 @@
 }
 
 .AboutMeText{
-    padding: 50px;
+    padding: 200px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;

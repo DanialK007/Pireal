@@ -1,0 +1,7 @@
+.MyParallax {
+    height: 90vh; /* Ensure the parallax section has a height */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: url(../img/background.png);
+}

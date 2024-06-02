@@ -7,7 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Work from './Pages/Work';
-import Navbar from './Layout/Components/Navbar';
+import Blog from './Pages/Blog';
 import LoadingScreen from './Layout/Components/LoadingScreen';
 
 function App() {
@@ -25,7 +25,6 @@ function App() {
 
   return (
     <>
-      <Navbar />
       {loading && <LoadingScreen />}
       <TransitionGroup>
         <CSSTransition key={location.key} classNames="fade" timeout={500}>
@@ -33,6 +32,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/work" element={<Work />} />
+            <Route exact path="/blog" element={<Blog />} />
           </Routes>
         </CSSTransition>
       </TransitionGroup>

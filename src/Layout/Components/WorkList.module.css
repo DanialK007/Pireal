@@ -12,11 +12,20 @@
     gap: 60px;
 }
 
-.WorkCatag a{
+.WorkCatag button{
+    background-color: transparent;
+    cursor: pointer;
     color: #191919;
+    font-weight: 500;
 }
-.WorkCatag a:hover{
+.WorkCatag button:hover{
     color: #10c9c3;
+}
+
+.WorkList button.active{
+    color: #10c9c3;
+    scale: 1.2;
+    opacity: 1;
 }
 
 .WorkGrid{
