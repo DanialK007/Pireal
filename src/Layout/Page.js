@@ -36,7 +36,7 @@ function Page() {
                     <CardWrapper key={index} card={card} />
                 ))}
             </div>
-            <div className={styles.Gap}></div>
+            <div className={styles.Gap}></div> 
         </div>
     );
 }
