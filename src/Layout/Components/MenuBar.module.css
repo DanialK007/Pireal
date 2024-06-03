@@ -1,0 +1,52 @@
+.MenuBar, .Menu {
+    display: none;
+}
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .MenuBar {
+        display: block;
+    }
+
+    .MenuBar button {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-weight: 600;
+        z-index: 120;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .Menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #10c9c3;
+        color: #fff;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .Menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    .Menu.show {
+        display: flex;
+        transform: translateX(0);
+    }
+}

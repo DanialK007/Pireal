@@ -40,3 +40,47 @@
     flex-direction: column;
 }
 
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .Footer2{
+        height: fit-content;
+        padding: 50px;
+        color: aliceblue;
+        background-color: #292b2c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Footer2 h1{
+        font-weight: 400;
+        padding: 5px 0;
+    }
+    
+    .Footer2 p, a{
+        color: #fff;
+        padding: 2px 0;
+    }
+    
+    .Footer2 a:hover{
+        text-decoration: none;
+        color: #10c9c3;
+    }
+    
+    .Footer2Side{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .Footer2Content{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .Footer2Nav, .Footer2Social{
+        display: flex;
+        flex-direction: column;
+    }
+}

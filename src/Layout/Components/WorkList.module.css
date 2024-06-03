@@ -96,3 +96,105 @@
     transform: scale(0.9);
     transition: opacity 500ms, transform 500ms;
 }
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .WorkList{
+        padding: 50px 0;
+        padding-bottom: 150px;
+        background-color: rgba(0, 0, 0, 0.027);
+    }
+    
+    .WorkCatag{
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .WorkCatag button{
+        background-color: transparent;
+        cursor: pointer;
+        color: #191919;
+        font-weight: 500;
+    }
+    .WorkCatag button:hover{
+        color: #10c9c3;
+    }
+    
+    .WorkList button.active{
+        color: #10c9c3;
+        scale: 1.2;
+        opacity: 1;
+    }
+    
+    .WorkGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        margin: auto;
+    }
+    
+    .WorkImg{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .WorkImg:hover{
+        filter: brightness(0.5);
+    }
+    
+    .WorkItem{
+        position: relative;
+    }
+    
+    .WorkCap{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        background-color: #191919;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    
+    .WorkCap:hover{
+        opacity: 1;
+    }
+    
+    .WorkCap h1{
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    
+    /* Animation classes */
+    .enter {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    .enterActive {
+        opacity: 1;
+        transform: scale(1);
+        transition: opacity 500ms, transform 500ms;
+    }
+    .exit {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .exitActive {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: opacity 500ms, transform 500ms;
+    }
+}

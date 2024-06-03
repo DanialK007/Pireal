@@ -1,6 +1,7 @@
 import styles from './Navbar2.module.css';
 import logo from '../img/logo-light.svg';
 import { Link } from 'react-router-dom';
+import MenuBar2 from './MenuBar2';
 
 function Navbar2(){
     return (
@@ -16,6 +17,7 @@ function Navbar2(){
                 <Link to=''>Contact</Link>
                 <Link to=''>Pricing</Link>
             </div>
+            <MenuBar2 />
         </nav>
     )
 }
