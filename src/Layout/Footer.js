@@ -12,7 +12,7 @@ function Footer() {
                 </Background>
                 <div className={styles.FooterCap}>
                     <h1>Let's Create with Pireal</h1>
-                    <p>Pireal is all that you need to create your creative website.<br/>
+                    <p>Pireal is all that you need to create your creative website.
                         Start enjoying your creativity already today.</p>
                     <MyButton>Purchase Now $30</MyButton>
                 </div>

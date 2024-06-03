@@ -35,3 +35,46 @@
 .NavLinks a:hover{
     color: #10c9c3;
 }
+
+
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .Nav{
+        position: absolute;
+        z-index: 999;
+        padding: 25px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Logo{
+        font-size: 1.5rem;
+    }
+    
+    .LogoImg{
+        height: 30px;
+    }
+    
+    .NavLinks{
+        display: none;
+        gap: 2rem;
+    }
+    
+    .NavLinks a{
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.9rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        transition: 300ms;
+    }
+    
+    .NavLinks a:hover{
+        color: #10c9c3;
+    }    
+}

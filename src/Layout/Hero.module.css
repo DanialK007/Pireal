@@ -43,3 +43,52 @@
     object-fit: cover;
     object-position: bottom;
 }
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .Hero{
+        /* background-image: url(img/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom; */
+        height: 100vh;
+        position: relative;
+    }
+    
+    .HeroBg{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .HeroLayer{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .HeroTitle{
+        font-size: 3rem;
+        margin: 0;
+    }
+    
+    .HeroSubtitle{
+        font-size: 1rem;
+        padding: 5px;
+        width: 340px;
+    }
+    
+    .HeroBg{
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}

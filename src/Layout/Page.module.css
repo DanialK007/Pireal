@@ -44,3 +44,55 @@
     width: 100%;
     margin-bottom: 10px;
 }
+
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .Page{
+        padding: 80px 10px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    
+    .PageDivider{
+        padding-top: 100px;
+    }
+    
+    .Page h1{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    .Page h2{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .Page p{
+        font-style: italic;
+    }
+    
+    .PageGrid{
+        display: grid;
+        padding: 50px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 50px;
+    }
+    
+    .Card{
+        transition: 300ms;
+        cursor: pointer;
+    }
+    
+    .Card:hover{
+        color: #10c9c3;
+    }
+    
+    .CardImg{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}

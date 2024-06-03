@@ -50,3 +50,65 @@
     padding: 30px;
     text-align: center;
 }
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .Footer{
+        /* background-image: url(img/promo-bg-2.jpg);
+        background-size: cover;
+        background-position: bottom; */
+        height: 400px;
+        position: relative;
+    }
+    
+    .FooterCap{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 400px;
+        width: 100%;
+        color: #fff;
+        background-color: #00000091;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .FooterCap h1{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .FooterCap p{
+        padding: 10px;
+    }
+    
+    .MyButton{
+        margin-top: 20px;
+        font-size: 1.2rem;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #10c9c3;
+        padding: 15px 40px;
+        transition: 300ms;
+    }
+    
+    .MyButton:hover{
+        background-color: #292b2c;
+    }
+    
+    .MyButton:active{
+        background-color: #022423;
+    }
+    
+    .FooterLine{
+        color: #fff;
+        background-color: #1f1f20;
+        padding: 30px;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+}
